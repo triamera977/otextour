@@ -1,0 +1,1392 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+			
+
+a
+	&:hover, &:focus
+		text-decoration: none
+		outline: none
+
+p
+	margin: 0
+
+tbody
+	border: 1px solid #333	
+
+nav
+	ul
+		li
+			list-style-type: none
+ul
+	padding: 0
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	background-color: #fff
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+.text-right
+	text-align: right
+
+::selection
+	background-color: $accent
+	color: #fff
+
+.main-head
+	// background: url(../img/header.png)
+	height: 340px
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	&:after
+		content: ''
+		background: url(../img/hea.png)
+		background-size: cover
+		background-position: center
+		position: fixed
+		width: 100%
+		height: 880px
+		top: 0
+		z-index: 0
+		opacity: .8	
+
+
+.r-h
+	position: relative
+	height: 350px
+	z-index: 1
+
+
+.sf-menu
+	ul, li
+		list-style-type: none !important
+		list-style-image: none !important
+		padding: 0
+		margin: 0	
+	li
+		a
+			color: #000
+			border: none
+			text-transform: uppercase
+			font-size: 19px
+			display: flex
+			justify-content: center
+		&.sfHover, &:hover
+			background: transparent
+	>li
+		&.active-trail
+			background-color: transparent
+			background-image: url(../img/activ_menu.png)
+		ul
+			li
+				&.active-trail
+					background-image: url(../img/activ_menu.png)
+
+
+
+.top-line
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	margin: 0 auto
+	width: 100%
+	z-index: 2
+	display: flex
+	justify-content: center
+	padding-bottom: 20px
+
+.main_menu
+	text-align: center
+	height: 60px
+	margin: 20px 0 15px 0
+
+
+.top-line,.main_menu
+	.sf-menu
+		position: relative
+		&:before
+			content: ''
+			background-color: #fff
+			position: absolute
+			width: 100%
+			height: 100%
+			filter: blur(16px)
+			opacity: .8
+			z-index: 0
+			left: 0
+
+
+
+.sf-menu
+	margin: auto
+	display: flex
+	justify-content: space-between
+	width: 100%
+	>li
+		background: transparent
+		position: relative
+		width: 100%
+		display: flex
+		justify-content: center
+		&:hover
+			background-image: url(../img/activ_menu.png)
+			// background: transparent
+		&::after
+			content: ''
+			background-image: url(../img/border-right.png)
+			position: absolute
+			height: 50%
+			width: 1px
+			top: 8px
+			right: 0
+		&:last-child
+			&::after
+				content: ''
+				background-image: none
+		ul
+			background-color: #fff
+			width: auto
+			li
+				height: 40px
+				margin: 10px 0 10px 0
+				background: transparent
+				position: relative
+				display: flex
+				align-items: center
+				&::after
+					content: ''
+					background-image: none
+				a
+					color: #000
+				&:hover
+					background-color: rgba($accent, 0.6)
+					width: 100%
+					text-align: left
+
+
+	>	li
+			display: inline-block
+
+.logo
+	margin-top: 70px
+	div
+		width: 238px
+		position: relative
+		&:before
+			content: ''
+			background-color: #fff
+			position: absolute
+			width: 100%
+			height: 100%
+			filter: blur(16px)
+			opacity: .8
+			z-index: 1
+		img
+			position: relative
+			z-index: 2
+
+.right_cont
+	margin-top: 50px	
+	.phone
+		font-size: 45px
+		color: #fff
+		line-height: 1.1
+		margin-bottom: 10px
+	.address
+		color: #fff	
+
+.main_menu-mobile
+	display: none
+
+
+// .main_menu
+// 	text-align: center
+// 	margin-bottom: 15px
+// 	a
+// 		color: #000
+// 		border: none
+// 		&:hover
+// 			background-color: rgba($accent, 0.6) 
+// 			box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.2)
+// 	ul, li
+// 		list-style-type: none
+// 		padding: 0
+// 		margin: 0
+// 	.sf-menu
+// 		margin: 0
+// 		float: none
+// 		display: table
+// 		li
+// 			background: transparent
+// 			text-align: left
+// 			float: none
+// 			&.leaf
+// 				list-style-type: none !important
+// 				list-style-image: none !important
+// 			ul
+// 				background-color: #fff
+// 				li
+// 					margin: 10px 0 10px 0
+// 					height: 40px
+// 					&:hover
+// 						// background: rgba(#edebea, 0.6) 
+// 						box-shadow: none
+// 					&.leaf
+// 						list-style-type: none !important
+// 						list-style-image: none !important				
+// 					a
+// 						color: #000
+// 						border: none
+// 						// background: transparent
+// 						box-shadow: none	
+// 		> li
+// 			padding-right: 30px	
+// 			&:first-child, &:last-child
+// 				padding-right: 0
+
+
+
+.uslugi_home
+	// padding: 13px 0
+	position: relative
+	text-align: center
+	margin-bottom: 13px
+	&:before
+		content: ''
+		background-color: #fff
+		position: absolute
+		width: 105%
+		height: 105%
+		filter: blur(16px)
+		opacity: .8
+		z-index: 0
+		left: -10px
+		top: -10px	
+	img
+		max-width: 100%
+		position: relative
+	.usluga_opisanie
+		// opacity: 0
+		position: absolute
+		left: 0
+		bottom: 0
+		right: 0
+		top: 0
+		background: rgba(white, 0.4)
+		transition: all 0.5s
+		display: flex
+		align-items: center
+		justify-content: center
+		z-index: 5
+		h2
+			font-size: 24px
+			text-transform: uppercase
+			font-weight: lighter
+			text-align: center
+			line-height: 1.2
+			padding: 0 10px
+	a
+		color: #333
+	&:hover
+		.usluga_opisanie
+			opacity: 1
+			cursor: pointer
+.amb
+	position: relative
+	margin-bottom: 10px
+	img
+		width: 100%
+	p
+		position: absolute
+		bottom: 0
+		width: 100%
+		background-color: rgba(0,0,0,.7)
+		color: #fff
+		text-align: center
+		font-size: 24px			
+		padding: 10px 0
+	span
+		position: absolute
+		bottom: 0
+		width: 100%
+		background-color: rgba(0,0,0,.7)
+		color: #fff
+		text-align: center
+		font-size: 24px			
+		padding: 10px 0
+		left: 0
+.bottom_cont
+	position: relative
+	margin-top: 80px
+	line-height: 1.5
+	p
+		font-size: 30px
+		color: #7b7877
+		margin: 0
+	&::before
+		content: ''
+		background-image: url(../img/line.png)	
+		height: 1px
+		width: 140px
+		top: -10px
+		left: 0
+		right: 0
+		margin: 0 auto
+		position: absolute
+
+footer
+	// position: relative
+	// z-index: 9
+	span
+		font-size: 60px
+		color: #7b7877
+
+.partners
+	h2
+		color: #7b7877
+		margin-bottom: 0
+		margin-top: 50px
+		margin-bottom: 20px
+	.item
+		padding: 0 15px
+	// 	width: auto
+	// 	height: 70px
+	// 	img
+	// 		width: auto 
+	// 		height: 100%
+		// margin-left: 20px
+
+
+.flex-container
+	display: flex;
+	flex-direction: column
+	flex-wrap: nowrap
+	justify-content: space-between
+	height: 400px
+	// align-content: center
+	// align-items: center
+	.flex-item
+		&:nth-child(2)
+			margin: 0 auto
+
+ul.full-width
+	width: 100%
+	height: 50px
+	position: relative
+	display: table
+	margin: 0
+	padding: 0
+	font-size: 19px
+	> li
+		display: table-cell
+		position: relative
+		> a
+			display: block
+			position: relative
+			width: 100%
+			height: 100%
+			text-align: center
+			// background: #FFF
+			line-height: 50px		
+			padding-bottom: 0
+			text-transform: uppercase
+
+
+.right_block
+	background-color: #fff
+	box-shadow: 3px -5px 34px 6px rgba(0, 0, 0, 0.23)
+	ul
+		padding: 0
+		li
+			padding: 10px 0 10px 25px
+			&:hover, &.active
+				background-color: rgba($accent, 0.6)
+			a
+				font-size: 20px
+				font-family: "roboto-example", sans-serif
+				color: #000
+				text-transform: uppercase
+
+
+.content_block
+	.title
+		h1
+			font-size: 50px
+			font-family: "roboto-example", sans-serif
+			font-weight: 400
+			line-height: 1
+			margin-bottom: 10px
+	.descriptoin
+		background: #fff
+		padding: 10px 20px 10px 20px
+		h2
+			font-size: 35px
+			font-family: "roboto-example", sans-serif
+			font-weight: 400
+			line-height: 1
+			margin: 0 0 20px 0
+.bottom-row
+	display: flex
+	align-items: center
+	justify-content: space-between
+	// div
+	// 	display: inline-block
+	.social
+		display: flex
+		cursor: pointer
+		img
+			width: 100%
+		div
+			margin-right: 5px
+
+button
+	background-color: $btn
+	color: #fff
+	padding: 10px 20px 5px 20px
+	border: 1px solid #000
+	border-radius: 5px
+	font-weight: bold
+	// margin-right: 40px
+	&:hover
+		background: lighten($btn, 5%)
+
+
+
+// nav:not(.mm-menu)
+// 	display: none
+
+// .header, .content, .footer
+// 	text-align: center
+
+.header
+	background: #fff
+	font-size: 16px
+	font-weight: bold
+	color: #fff
+	line-height: 40px
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	width: 100%
+	height: 40px
+	padding: 0 50px
+	display: none
+	position: relative
+	z-index: 5
+	opacity: .5
+
+.header.fixed
+	position: fixed
+	top: 0
+	left: 0
+
+.footer.fixed
+	position: fixed
+	bottom: 0
+	left: 0
+
+.header a
+	display: block
+	width: 50px
+	height: 18px
+	padding: 11px
+	position: absolute
+	top: 0
+	left: 0
+	&:before, &:after
+		content: ''
+		display: block
+		background: #333
+		height: 2px
+	span
+		background: #333
+		display: block
+		height: 2px
+		margin: 6px 0
+
+
+
+
+#cssmenu
+	border: 0 none
+	box-sizing: border-box
+	display: block
+	line-height: 1
+	list-style: none outside none
+	margin: 0
+	padding: 0
+	position: relative
+	box-shadow: 3px -5px 34px 6px rgba(0,0,0,.23)
+	background-color: rgba(255, 255, 255,.8)
+	margin-bottom: 14px	
+	ul
+		border: 0 none
+		box-sizing: border-box
+		display: block
+		line-height: 1
+		list-style: none outside none
+		margin: 0
+		padding: 0
+		position: relative
+		li
+			border: 0 none
+			box-sizing: border-box
+			display: block
+			line-height: 1
+			list-style: none outside none
+			margin: 0
+			padding: 0
+			position: relative
+			a
+				border: 0 none
+				box-sizing: border-box
+				display: block
+				line-height: 1
+				list-style: none outside none
+				margin: 0
+				padding: 0
+				position: relative
+		ul
+			display: none
+	color: #ffffff
+	font-family: Helvetica,Arial,sans-serif
+	> ul > li
+		> a
+			// background: rgb(243, 243, 243)
+			// border-left: 1px solid #1682ba
+			// border-right: 1px solid #1682ba
+			border-top: 1px solid rgba(237,235,234,.6)
+			color: #333
+			cursor: pointer
+			font-size: 14px
+			// font-weight: bold
+			padding: 15px 20px
+			text-decoration: none
+			// text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35)
+			z-index: 2
+			&:hover
+				// background: rgb(31, 160, 228)
+				// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#1992d1',GradientType=0 )
+				color: #333
+		&.active > a
+			background: rgba(237,235,234,.6)
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#1992d1',GradientType=0 )
+			color: #333
+		&.open > a
+			// background: rgb(31, 160, 228)
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#1992d1',GradientType=0 )
+			color: #333
+			border-bottom: 1px solid rgba(237,235,234,.6)
+			box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 1px rgba(0, 0, 0, 0.15)
+		&:last-child > a, &.last > a
+			border-bottom: 1px solid rgba(237,235,234,.6)
+
+.holder
+	height: 0
+	position: absolute
+	right: 0
+	top: 0
+	width: 0
+	&:after, &:before
+		content: ""
+		display: block
+		height: 6px
+		position: absolute
+		right: 20px
+		transform: rotate(-135deg)
+		width: 6px
+		z-index: 10
+	&:after
+		border-left: 2px solid #ffffff
+		border-top: 2px solid #ffffff
+		top: 17px
+
+#cssmenu > ul > li
+	> a:hover > span:after, &.active > a > span:after, &.open > a > span:after
+		border-color: #333
+
+.holder:before
+	border-left-color: inherit
+	border-left-style: solid
+	border-left-width: 2px
+	border-top-color: inherit
+	border-top-style: solid
+	border-top-width: 2px
+	top: 18px
+
+#cssmenu
+	ul ul
+		li
+			a
+				background: rgba(237,235,234,.6)
+				border-bottom: 1px solid rgba(237,235,234,.6)
+				// border-left: 1px solid #32373e
+				// border-right: 1px solid #32373e
+				box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset
+				color: #333
+				cursor: pointer
+				font-size: 13px
+				padding: 10px 20px
+				text-decoration: none
+				z-index: 1
+			&:hover > a, &.open > a, &.active > a
+				background: none repeat scroll 0 0 rgba(237,235,234,.6)
+				color: #333
+			&:first-child > a
+				box-shadow: none
+		ul li
+			&:first-child > a
+				box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset
+			a
+				padding-left: 30px
+		li
+			&.has-sub > a:after
+				border-left: 2px solid #eeeeee
+				border-top: 2px solid #eeeeee
+				content: ""
+				display: block
+				height: 5px
+				position: absolute
+				right: 20px
+				top: 11.5px
+				transform: rotate(-135deg)
+				width: 5px
+				z-index: 10
+			&.active > a:after, &.open > a:after, > a:hover:after
+				border-color: #ffffff
+	> ul > li > ul > li
+		&:last-child > a, &.last > a
+			border-bottom: 0 none
+		&.open:last-child > a, &.last.open > a
+			border-bottom: 1px solid rgba(237,235,234,.6)
+		&.open:last-child > ul > li:last-child > a
+			border-bottom: 0 none
+
+.owl-carousel.slide-hom
+	.owl-item
+		img
+			max-width: 100%
+			width: auto
+			height: auto
+			display: block			
+.top_slaid, .np2018_slaid
+	width: 600px
+	margin: 0 auto
+	padding-bottom: 20px
+	position: relative
+	.owl-item
+		div
+			position: relative
+			span
+				position: absolute
+				bottom: 0
+				width: 100%
+				text-align: center
+				font-size: 26px
+				background-color: rgba(0,0,0,.7)
+				color: #fff
+				padding: 10px 0
+			p
+				position: absolute		
+				top: 0
+				bottom: 0
+				display: flex
+				align-items: center
+				justify-content: center
+				left: 0
+				right: 0				
+				font-size: 55px
+				margin: 0 auto
+				text-align: center
+				line-height: 1.2		
+				background-color: rgba(255,255,255, .8)				
+	.owl-nav
+		display: flex
+		align-items: center
+		justify-content: space-between
+		position: absolute
+		width: 120%
+		top: 0
+		bottom: 0
+		left: -10%
+		span
+			font-size: 80px
+		[class*=owl-]:hover
+			background: transparent
+			color: #000
+			font-weight: bold
+		[class*=owl-]
+			outline: none
+
+.top_slaid
+	width: 97%
+
+.owl-carousel
+	.owl-stage-outer
+		z-index: 2
+
+.slide-progress
+	width: 0
+	max-width: 100%
+	height: 4px
+	background: #7fc242
+
+.right_block
+	ul
+		li
+			padding: 10px 0 10px 25px
+
+
+.tdl
+	td, th
+		text-align: left
+
+
+
+.tours__school_wr
+	position: relative
+	.owl-nav
+		display: flex
+		align-items: center
+		justify-content: space-between
+		position: absolute
+		width: 120%
+		top: 0
+		bottom: 0
+		left: -10%
+		span
+			font-size: 120px
+		[class*=owl-]:hover
+			background: transparent
+			color: #000
+			font-weight: bold
+		[class*=owl-]
+			outline: none
+
+
+
+
+
+
+// Style			
+
+body.front .region.region-content
+	background: transparent
+
+.content_block h1.title
+	font-size: 60px
+	font-family: "roboto-example", sans-serif
+	font-weight: 400
+	margin: 0
+	line-height: 1
+	margin-bottom: 10px
+
+.name_avto_tur h2
+	font-size: 50px
+	font-family: "roboto-example", sans-serif
+	font-weight: 400
+	margin: 0
+	line-height: 0.9
+
+.right_block ul li
+	&.active, &:hover
+		background-color: rgba(237, 235, 234, 0.6)
+
+ul
+	li
+		&.active-trail
+			background-color: rgba(237, 235, 234, 0.6)
+		&.leaf
+			list-style-image: none
+			list-style-type: none
+	&.menu
+		padding: 0
+		li
+			margin: 0
+
+.front .region-content
+	padding: 0
+
+.bottom-row
+	margin: 40px 0 40px 0
+	button a
+		color: #fff
+
+#mdt-preorder-form table
+	width: 100%
+	td
+		border: 1px solid #cccccc
+		font-size: 18px
+		line-height: 140%
+		padding: 8px 6px
+		text-align: center
+		.mdt-button
+			background-color: #808080
+			color: #fff
+			padding: 10px 20px 5px 20px
+			border: 1px solid #000
+			border-radius: 5px
+			font-weight: 700
+			margin-right: 40px
+			height: auto
+
+.mdt-element
+	padding: .5rem .75rem
+	color: #464a4c
+	background-color: #fff
+	background-image: none
+	background-clip: padding-box
+	border: 1px solid rgba(0,0,0,.15)
+	border-radius: .25rem
+	transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s			
+
+.region #ces_container
+	min-width: inherit
+	.ces_menu
+		border-left: none
+	.ces_menu_msc-cruises
+		border-right: 1px solid #808080
+	#ces_menu_container
+		background: none
+		border: none
+		position: inherit
+		z-index: 9999
+	span
+		// font-size: 20px
+	.ces_offers_table a
+		color: #428bca
+		font-weight: bold
+	.ces_menu
+		width: 46%
+		font-size: 14px
+
+.ui-widget
+	font-family: inherit
+	font-size: inherit
+
+.table_form_avto
+	.date
+		padding-right: 10px
+	.pole .form-text
+		width: 300px
+
+.fieldset-description
+	font-size: 14px
+	text-align: center
+
+.webform-submit
+	display: inline-block
+	padding: 6px 12px
+	margin-bottom: 0
+	font-size: 14px
+	font-weight: 400
+	line-height: 1.42857143
+	text-align: center
+	white-space: nowrap
+	vertical-align: middle
+	touch-action: manipulation
+	cursor: pointer
+	user-select: none
+	background-image: none
+	border: 1px solid transparent
+	border-radius: 4px
+
+.button-primary
+	&:hover
+		color: #fff
+		background-color: #286090
+		border-color: #204d74
+	color: #fff
+	background-color: #337ab7
+	border-color: #2e6da4
+
+.form-text, .form-select
+	padding: .5rem .75rem
+	color: #464a4c
+	background-color: #fff
+	background-image: none
+	-webkit-background-clip: padding-box
+	background-clip: padding-box
+	border: 1px solid rgba(0, 0, 0, 0.15)
+	border-radius: .25rem
+	transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s
+
+.form-text:focus, .form-select:focus
+	color: #464a4c
+	background-color: #fff
+	border-color: #5cb3fd
+	outline: 0
+
+button a
+	color: #fff
+	&:hover, &:focus
+		color: #fff
+
+.page-taxonomy-term-13
+	.region-content
+		padding: 5px
+		background: transparent
+	.col-md-9
+		width: 100%
+
+.page-reviews .col-md-9
+	width: 100%
+
+.accordion-tours
+	.views-row
+		display: flex
+		justify-content: space-between
+		line-height: 40px
+		text-align: center
+		border-bottom: 1px solid #aaaaaa
+		&:hover
+			background-color: #f9f9f9
+	.ui-accordion .ui-accordion-content
+		padding: 0
+	.views-field-field-date
+		min-width: 150px
+		border-right: 1px solid #aaaaaa
+		display: flex
+		align-items: center
+		justify-content: center
+	.views-field-title
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+	.views-field-field-price
+		min-width: 120px
+		border-left: 1px solid #aaaaaa
+		display: flex
+		align-items: center
+		justify-content: center
+	.views-field-field-date
+		border-right: 1px solid #aaaaaa
+
+.menu-top
+	visibility: hidden
+
+.main_menu .sf-menu > li:first-child
+	background-image: url(../img/home.png)
+	background-repeat: no-repeat
+	background-size: 34%
+	background-position: 50%
+	width: 60%
+	> a
+		color: rgba(0, 0, 0, 0)
+		&:hover
+			background-color: transparent
+
+ul li.expanded
+	list-style-image: none
+	list-style-type: none
+
+.form-item-field-kategoria-und-2
+	background-image: url(http://new.otextour.ru.loc/sites/all/themes/otexnew/img/home.png)
+	background-repeat: no-repeat
+	background-position: 7%
+
+td, th
+	text-align: center
+	padding: 0 10px
+
+.table_form_avto, .webform-client-form-78
+	td
+		text-align: left
+
+.field-name-field-download-file-tur
+	background-color: grey
+	color: #fff
+	padding: 10px 20px 5px 20px
+	border: 1px solid #000
+	border-radius: 5px
+	font-weight: 700
+	a
+		color: #fff
+
+.dn
+	border-bottom: 1px dotted #dadada
+	font-size: 20px
+	font-weight: bold
+	text-transform: uppercase
+	
+
+.ecskurs-desc
+	// font-size: 14px
+	display: flex
+	flex-direction: column
+	text-align: center
+	.e-title
+		font-weight: bold
+	p
+		font-size: 14px
+	
+
+.ecskurs
+	display: flex
+	margin: 15px 0
+.e-t, .e-p
+	width: 8em
+	display: flex
+	align-items: center
+	justify-content: center
+	font-weight: bold
+	flex: none
+.e-p
+	width: 10em
+
+.e-p
+	text-align: center
+
+	
+
+.e-b
+	display: flex
+	align-items: center
+	justify-content: center
+	a
+		background-color: grey
+		color: #fff
+		padding: 5px 10px 2px 10px
+		border: 1px solid #000
+		border-radius: 5px
+		font-weight: 700
+
+.download_file
+	text-align: center
+	margin: 20px 0		
+
+
+.flex-outer
+	li
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+
+.flex-outer > li > label
+	flex: 1 0 130px
+	max-width: 240px
+
+.flex-outer > li > label + *
+	flex: 1 0 220px
+
+
+.info-ecs
+	margin-bottom: 20px
+	text-align: center
+
+#backtotop
+	// z-index: 10
+	bottom: 40px
+
+.avto_fildset	
+	tbody
+		border: none
+
+.node-bus-tours
+	ul
+		padding-left: 40px	
+	p	
+		margin: 16px
+		
+.webform-client-form-24
+	tbody
+		border: none
+
+#node-83
+	ul
+		padding-left: 40px
+
+ul		
+	&.pl
+		padding-left: 40px
+		// list-style: none
+
+.top-s
+	width: 100%
+	background-color: rgba(255,255,255, .9)
+	position: fixed
+	z-index: 99
+	display: flex
+	align-items: center
+	justify-content: center
+	p
+		font-size: 14px
+		padding: 5px
+
+.i-clos
+	background-image: url(../img/close.png)
+	height: 15px
+	width: 15px
+	background-size: contain
+	margin-left: 20px
+	cursor: pointer
+	background-repeat: no-repeat
+
+#block-block-5
+	img
+		width: 45%
+
+.view-sanatorii
+	.view-content
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-wrap: wrap
+.wr-sanatorii
+	margin-bottom: 20px
+	.title
+		text-align: center
+		font-size: 30px
+	img
+		width: 100%
+		height: auto		
+
+.foto_spec
+	ul
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: center		
+		width: 660px
+		margin: 0 auto		
+		li
+			list-style: none			
+			width: 328px
+			padding: 5px
+			img
+				width: 100%
+			&:last-child
+				font-size: 26px
+				line-height: 1
+				text-align: center
+				strong
+					font-size: 55px
+
+.top_text_spec
+	p
+		font-size: 22px
+		text-align: center					
+	span
+		font-size: 30px
+		font-weight: 700
+
+.view-content
+	#node-164, #node-163, #node-162
+    display: none		
+
+
+.team__tours
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	li
+		list-style: none
+		width: 360px
+		position: relative
+		margin-bottom: 30px
+		img
+			width: 100%
+		p
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+			width: 100%
+			color: #fff
+			text-align: center
+			background-color: rgba(0,0,0,.6)			
+			a
+				color: #fff
+				&:hover
+					color: #fff
+
+.tours__school_wr
+	margin-bottom: 30px
+	border-bottom: 1px solid
+	padding-bottom: 50px		
+	.owl-dots
+		.owl-dot
+			margin-top: 35px !important
+			span
+				width: 20px
+				height: 20px
+
+.tours__school
+	&_name
+		font-size: 30px
+	&_name_city
+		font-size: 25px
+		text-align: center
+		text-transform: uppercase
+	&_desc
+		table
+			margin-bottom: 20px
+	&_img
+		display: flex
+		flex-wrap: wrap
+		justify-content: center		
+		div
+			padding: 5px
+			img
+				width: inherit !important
+	&_img_desc		
+		display: flex		
+		flex-wrap: wrap
+		justify-content: center
+		.t__s_i_d_wr
+			width: 460px
+			padding: 10px
+			&.coll-3
+				width: 355px
+			.title
+				span
+					font-size: 18px
+					font-weight: bold
+			.desc_img
+				.desc
+					ul
+						padding-left: 18px
+				.img	
+					img
+
+.contents__school
+	display: flex
+	justify-content: space-around
+	.contents__school_l,.contents__school_r
+		.title
+			font-weight: bold
+			font-size: 18px
+		ul
+			li
+				list-style: none
+				ul
+					padding-left: 15px
+
+
+.eTimer
+	margin-top: 150px
+	background: rgba(255,255,255, .4)
+	position: relative
+	&:before
+		content: ''
+		background-color: #fff
+		position: absolute
+		width: 100%
+		height: 100%
+		filter: blur(16px)
+		opacity: .8
+		z-index: -1
+	.etTitle
+		font-weight: bold
+		color: #333
+
+.new_yer
+	padding: 0
+	display: flex
+	justify-content: space-between
+	line-height: 40px
+	text-align: center
+	border-bottom: 1px solid #aaa
+	.new_yer-date
+		min-width: 150px
+		border-right: 1px solid #aaa
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 150px
+		line-height: 1.6
+	.new_yer-title
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+	.new_yer-price
+		min-width: 120px
+		border-left: 1px solid #aaa
+		display: flex
+		align-items: center
+		justify-content: center
+#block-block-8		
+	.ui-accordion
+		.ui-accordion-content
+			padding: 0
+			height: auto !important
+
+.img_flex
+	display: flex
+	align-items: center
+	justify-content: center
+	.img
+		width: 40%
+		padding: 10px
+		img
+			width: 100%
+.vprogr
+	display: flex			
+	ul
+		list-style: none
+	div:nth-child(2)
+		display: flex
+		align-items: flex-start
+		div
+			width: 40%
+			img
+				width: 100%
+
+.lsn
+	list-style: none
+
+
+@import "media" // Всегда в конце

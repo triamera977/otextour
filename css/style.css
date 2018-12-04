@@ -1,0 +1,284 @@
+    body.front .region.region-content {
+        background: transparent;
+    }
+
+    .content_block h1.title{
+    	font-size: 60px;
+    	font-family: "MyriadProRegular", sans-serif;
+    	font-weight: 400;
+    	margin: 0;
+      line-height: 1;
+      margin-bottom: 10px;
+  }	
+
+
+  .name_avto_tur h2{
+     font-size: 50px;
+     font-family: "MyriadProCondRegular", sans-serif;
+     font-weight: 400;
+     margin: 0;
+     line-height: 0.9;
+ }
+
+ .right_block ul li.active, .right_block ul li:hover, ul li.active-trail {
+     background-color: rgba(237,235,234,.6);
+ }
+
+
+ ul li.leaf {
+     list-style-image: none;
+     list-style-type: none;
+ }
+ ul.menu{
+     padding: 0;
+ }
+ ul.menu li{
+     margin: 0;
+ }
+
+ .front .region-content {
+   padding: 0;
+}	
+.bottom-row {
+    margin: 40px 0 40px 0;
+}	
+.bottom-row button a{
+  color: #fff
+}
+
+
+
+
+
+#mdt-preorder-form table{
+ width: 96%;
+}
+
+#mdt-preorder-form table td{
+ border: 1px solid #cccccc;
+ font-size: 18px;
+ line-height: 140%;
+ padding: 8px 6px;
+ text-align: center;
+}
+
+#mdt-preorder-form table td .mdt-button{
+ background-color: #808080;
+ color: #fff;
+ padding: 10px 20px 10px 20px;
+ border: 1px solid #000;
+ border-radius: 5px;
+ font-weight: 700;
+ margin-right: 40px;
+ height: auto;
+}
+
+.region #ces_container{
+ min-width: inherit;
+}
+
+.region #ces_container .ces_menu {
+ border-left: none;
+}
+
+.region #ces_container .ces_menu_msc-cruises {
+ border-right: 1px solid #808080;
+}
+
+.region #ces_container #ces_menu_container {
+ background: none ;
+ border: none ;
+ position: inherit;
+ z-index: 9999;
+}
+
+.region #ces_container span {
+ font-size: 20px;
+}
+
+.region #ces_container .ces_offers_table a {
+ color: #428bca;
+ font-weight: bold;
+}
+
+.region #ces_container .ces_menu {
+ width: 46%;
+ font-size: 14px;
+}
+
+.ui-widget{
+ font-family: inherit ;
+ font-size: inherit;
+}
+
+.table_form_avto .date{
+ padding-right: 10px;
+}
+
+.table_form_avto .pole .form-text{
+ width: 300px;
+}
+
+.fieldset-description {
+    font-size: 14px;
+    text-align: center;
+}
+
+.webform-submit{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;	
+}
+
+
+.button-primary:hover {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+.button-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.form-text, .form-select {
+
+    padding: .5rem .75rem;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+
+.form-text:focus, .form-select:focus  {
+    color: #464a4c;
+    background-color: #fff;
+    border-color: #5cb3fd;
+    outline: 0;
+}
+
+button a{
+	color: #fff;
+}
+
+button a:hover, button a:focus{
+	color: #fff;
+}
+
+.page-taxonomy-term-13 .region-content{
+	padding: 5px;
+	background: transparent;
+}
+
+.page-taxonomy-term-13 .col-md-9, .page-reviews .col-md-9{
+	width: 100%;
+}
+
+
+.accordion-tours .views-row {
+  display: flex;
+  justify-content: space-between;
+  line-height: 40px;
+  text-align: center;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.accordion-tours .views-row:hover {
+  background-color: #f9f9f9;
+}
+
+.accordion-tours .ui-accordion .ui-accordion-content {
+  padding: 0;
+}
+
+.accordion-tours .views-field-field-date {
+  min-width: 150px;
+  border-right: 1px solid #aaaaaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion-tours .views-field-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.accordion-tours .views-field-field-price {
+  min-width: 120px;
+  border-left: 1px solid #aaaaaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion-tours .views-field-field-date {
+    border-right: 1px solid #aaaaaa;
+}
+
+
+.menu-top{
+	visibility: hidden;
+}
+
+
+.main_menu .sf-menu >li:first-child{
+	background-image: url(../img/home.png);
+    background-repeat: no-repeat;
+    background-size: 34%;
+    background-position: 50%;
+}
+
+.main_menu .sf-menu >li:first-child >a{
+    color: rgba(0, 0, 0, 0) ;
+}
+
+.main_menu .sf-menu >li:first-child >a:hover{
+    background-color: transparent;
+}
+
+ul li.expanded {
+    list-style-image: none;
+    list-style-type: none;
+}
+
+.form-item-field-kategoria-und-2 {
+    background-image: url(http://new.otextour.ru.loc/sites/all/themes/otexnew/img/home.png);
+    background-repeat: no-repeat;
+    background-position: 7%;
+}
+
+td, th {
+    text-align: center;
+    padding: 0 10px;    
+}
+
+.field-name-field-download-file-tur{
+    background-color: grey;
+    color: #fff;
+    padding: 10px 20px 5px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-weight: 700;   
+}

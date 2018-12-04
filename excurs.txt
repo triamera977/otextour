@@ -1,0 +1,41 @@
+<div class="row">
+<div class="col-md-6">
+<div class="uslugi_home"><img alt="" src="/sites/default/files/ekskursii/sv-min.jpg" />
+<div class="usluga_opisanie">
+<h2><a href="#">ИЗ СВЕТЛОГОРСКА</a></h2>
+</div>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="uslugi_home"><img alt="" src="/sites/default/files/ekskursii/ya-min.jpg" />
+<div class="usluga_opisanie">
+<h2><a href="#">ИЗ ЯНТАРНОГО</a></h2>
+</div>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="uslugi_home"><img alt="" src="/sites/default/files/ekskursii/klng-min.jpg" />
+<div class="usluga_opisanie">
+<h2><a href="#">ИЗ КАЛИНИНГРАДА</a></h2>
+</div>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="uslugi_home"><img alt="" src="/sites/default/files/ekskursii/pionerskiy-min.jpg" />
+<div class="usluga_opisanie">
+<h2><a href="#">ИЗ ПИОНЕРСКОГО</a></h2>
+</div>
+</div>
+</div>
+
+<div class="col-md-12">
+<div class="uslugi_home"><img alt="" src="/sites/default/files/ekskursii/zel-min.jpg" />
+<div class="usluga_opisanie">
+<h2><a href="#">ИЗ ЗЕЛЕНОГРАДСКА</a></h2>
+</div>
+</div>
+</div>
+</div>
